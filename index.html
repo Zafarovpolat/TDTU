@@ -52,6 +52,8 @@
                     <li class="header__list-item"><a class="link" href="./students.html">Ustozlar</a></li>
                     <li class="header__list-item"><button class="btn" id="modalBtn">Aloqa</button></li>
                 </ul>
+
+                <button id="burgerBtn"><i class="fa-solid fa-bars"></i></button>
             </nav>
 
             <div class="header__wrapper">
@@ -61,79 +63,100 @@
                 <h1>
                     <span>ISLOM KARIMOV NOMIDAGI</span> TDTU <span> Akademik Litsey</span>
                 </h1>
-                <h2>Ilm boylikdan afzalroqdir: Ilm seni himoya qilar, sen esa boylikni <sub>Abu ibn Tolib Roziyallohu
-                        anhu</sub></h2>
+                <h2>Ilm boylikdan afzalroqdir: Ilm seni himoya qilar, sen esa boylikni.</h2>
                 <a href="./about.html" class="btn">Batafsil</a>
             </div>
         </div>
+
+        <div class="header__menu">
+            <button class="header__menu-close"><i class="fa-solid fa-x"></i></button>
+
+            <ul class="header__menu-list">
+                <li class="header__menu-list-item"><a class="link" href="./index.html">Bosh sahifa</a></li>
+                <li class="header__menu-list-item"><a class="link" href="./about.html">Bizning Litsey</a></li>
+                <li class="header__menu-list-item"><a class="link" href="./news.html">Yangiliklar</a></li>
+                <li class="header__menu-list-item"><a class="link" href="./achievements.html">Yutuqlar</a></li>
+                <li class="header__menu-list-item"><a class="link" href="./students.html">Ustozlar</a></li>
+                <li class="header__menu-list-item"><button class="btn" id="modalBtn">Aloqa</button></li>
+            </ul>
+
+        </div>
+
+        <div class="modalcover">
+
+            <div class="modalbcg"></div>
+
+            <div class="modal">
+                <button id="modalClose"><i class="fa-solid fa-x"></i></button>
+
+                <h3 class="modal__heading">
+                    Malumotingizni qoldiring
+                </h3>
+
+                <form class="modal__form" action="#" method="post">
+
+
+                    <div class="modal__form__up">
+                        <div>
+                            <label for="name">Ism</label>
+                            <input autocomplete="off" type="text" id="name">
+                        </div>
+
+                        <div>
+                            <label for="surname">Familiya</label>
+                            <input autocomplete="off" type="text" id="surname">
+                        </div>
+
+                        <div>
+                            <label for="number">Telefon raqamingiz</label>
+                            <input autocomplete="off" type="tel" id="number">
+                        </div>
+
+                        <div>
+                            <label for="email">Email</label>
+                            <input autocomplete="off" type="email" id="email">
+                        </div>
+
+                        <div>
+                            <textarea name="info" id="info" placeholder="Malumot..."></textarea>
+                        </div>
+                    </div>
+
+                    <div class="modal__form__bottom">
+                        <ul class="medias">
+                            <li class="medias__item">
+                                <a href="https://t.me/ALqabul2023">
+                                    <i class="fa-brands fa-telegram"></i>
+                                </a>
+                            </li>
+                            <li class="medias__item">
+                                <a href="#">
+                                    <i class="fa-brands fa-youtube"></i>
+                                </a>
+                            </li>
+                            <li class="medias__item">
+                                <a href="#">
+                                    <i class="fa-brands fa-facebook"></i>
+                                </a>
+                            </li>
+                        </ul>
+
+                        <button class="btn" type="submit">Jo'natish</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
         <div class="cover"></div>
     </header>
 
-    <div class="modalcover">
+    <main>
 
-        <div class="modalbcg"></div>
-
-        <div class="modal">
-            <button id="modalClose"><i class="fa-solid fa-x"></i></button>
-
-            <h3 class="modal__heading">
-                Malumotingizni qoldiring
-            </h3>
-
-            <form class="modal__form" action="#" method="post">
+    </main>
 
 
-                <div class="modal__form__up">
-                    <div>
-                        <label for="name">Ism</label>
-                        <input autocomplete="off" type="text" id="name">
-                    </div>
 
-                    <div>
-                        <label for="surname">Familiya</label>
-                        <input autocomplete="off" type="text" id="surname">
-                    </div>
-
-                    <div>
-                        <label for="number">Telefon raqamingiz</label>
-                        <input autocomplete="off" type="tel" id="number">
-                    </div>
-
-                    <div>
-                        <label for="email">Email</label>
-                        <input autocomplete="off" type="email" id="email">
-                    </div>
-
-                    <div>
-                        <textarea name="info" id="info" cols="30" rows="8" placeholder="Malumot..."></textarea>
-                    </div>
-                </div>
-
-                <div class="modal__form__bottom">
-                    <ul class="medias">
-                        <li class="medias__item">
-                            <a href="https://t.me/ALqabul2023">
-                                <i class="fa-brands fa-telegram"></i>
-                            </a>
-                        </li>
-                        <li class="medias__item">
-                            <a href="#">
-                                <i class="fa-brands fa-youtube"></i>
-                            </a>
-                        </li>
-                        <li class="medias__item">
-                            <a href="#">
-                                <i class="fa-brands fa-facebook"></i>
-                            </a>
-                        </li>
-                    </ul>
-
-                    <button class="btn" type="submit">Jo'natish</button>
-                </div>
-
-            </form>
-        </div>
-    </div>
 </body>
 
 </html>
