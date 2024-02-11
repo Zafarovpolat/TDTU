@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Icons -->
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Fonts -->
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/media/icon//apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/media/icon//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/media/icon//favicon-16x16.png">
+    <link rel="manifest" href="./assets/media/icon//site.webmanifest">
+    <!-- Favicon -->
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <!-- <link rel="stylesheet" href="./assets/css/main.css.map"> -->
+    <!-- CSS -->
+
+    <!-- JS -->
+    <script defer src="./assets/js/script.js"></script>
+    <!-- JS -->
+
+    <title>TDTU Akademik Litsey</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <nav>
+                <a href="./index.html" class="logo">
+                    <img src="./assets/media/Logo.svg" alt="#">
+                </a>
+
+                <ul class="header__list">
+                    <li class="header__list-item"><a class="link" href="./index.html">Bosh sahifa</a></li>
+                    <li class="header__list-item"><a class="link" href="./about.html">Bizning Litsey</a></li>
+                    <li class="header__list-item"><a class="link" href="./news.html">Yangiliklar</a></li>
+                    <li class="header__list-item"><a class="link" href="./achievements.html">Yutuqlar</a></li>
+                    <li class="header__list-item"><a class="link" href="./students.html">Ustozlar</a></li>
+                    <li class="header__list-item"><button class="btn" id="modalBtn">Aloqa</button></li>
+                </ul>
+            </nav>
+
+            <div class="header__wrapper">
+                <h4>
+                    TDTU AL
+                </h4>
+                <h1>
+                    <span>ISLOM KARIMOV NOMIDAGI</span> TDTU <span> Akademik Litsey</span>
+                </h1>
+                <h2>Ilm boylikdan afzalroqdir: Ilm seni himoya qilar, sen esa boylikni <sub>Abu ibn Tolib Roziyallohu
+                        anhu</sub></h2>
+                <a href="./about.html" class="btn">Batafsil</a>
+            </div>
+        </div>
+        <div class="cover"></div>
+    </header>
+
+    <div class="modalcover">
+
+        <div class="modalbcg"></div>
+
+        <div class="modal">
+            <button id="modalClose"><i class="fa-solid fa-x"></i></button>
+
+            <h3 class="modal__heading">
+                Malumotingizni qoldiring
+            </h3>
+
+            <form class="modal__form" action="#" method="post">
+
+
+                <div class="modal__form__up">
+                    <div>
+                        <label for="name">Ism</label>
+                        <input autocomplete="off" type="text" id="name">
+                    </div>
+
+                    <div>
+                        <label for="surname">Familiya</label>
+                        <input autocomplete="off" type="text" id="surname">
+                    </div>
+
+                    <div>
+                        <label for="number">Telefon raqamingiz</label>
+                        <input autocomplete="off" type="tel" id="number">
+                    </div>
+
+                    <div>
+                        <label for="email">Email</label>
+                        <input autocomplete="off" type="email" id="email">
+                    </div>
+
+                    <div>
+                        <textarea name="info" id="info" cols="30" rows="8" placeholder="Malumot..."></textarea>
+                    </div>
+                </div>
+
+                <div class="modal__form__bottom">
+                    <ul class="medias">
+                        <li class="medias__item">
+                            <a href="https://t.me/ALqabul2023">
+                                <i class="fa-brands fa-telegram"></i>
+                            </a>
+                        </li>
+                        <li class="medias__item">
+                            <a href="#">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                        </li>
+                        <li class="medias__item">
+                            <a href="#">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <button class="btn" type="submit">Jo'natish</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
