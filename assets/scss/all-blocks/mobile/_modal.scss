@@ -1,0 +1,52 @@
+@media (max-width: 450px) {
+    .modal {
+        &__heading {
+            font-size: 18px;
+        }
+
+        #modalClose {
+            top: 5%;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .modal {
+        gap: 0;
+        bottom: 10%;
+        top: 10%;
+
+        &__heading {
+            font-size: 16px;
+        }
+
+        &__form {
+            gap: 30px;
+
+            &__bottom {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+            }
+        }
+
+        .medias {
+            margin: auto;
+        }
+
+        #modalClose {
+            top: 5%;
+            right: 7%;
+        }
+    }
+}
+
+@media (max-width: 330px) {
+    .modal {
+
+        &__heading {
+            font-size: 14px;
+        }
+    }
+}

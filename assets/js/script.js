@@ -30,15 +30,17 @@ modalBcg.addEventListener('click', () => {
 
 let burgerOpen = document.getElementById("burgerBtn")
 let burgerMenu = document.querySelector(".header__menu")
-let burgerClose = document.querySelector(".header__menu-close")
+let burgerList = document.querySelector(".header__menu-list")
 
 burgerOpen.addEventListener('click', () => {
     burgerMenu.style.display = "flex"
-    burgerMenu.style.animationName = "burger-on"
+    burgerMenu.style.animationName = "modal-on"
+    burgerList.style.animationName = "burger-on"
 })
 
-burgerClose.addEventListener('click', () => {
-    burgerMenu.style.animationName = "burger-off"
+burgerMenu.addEventListener('click', () => {
+    burgerMenu.style.animationName = "modal-off"
+    burgerList.style.animationName = "burger-off"
     setTimeout(() => {
         burgerMenu.style.display = "none"
     }, 300)

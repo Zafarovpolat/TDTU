@@ -4,6 +4,7 @@
     background-image: url(../media/bcg2.jpg);
     background-size: cover;
     background-position: center;
+    margin-bottom: 80px;
 
     &>.container {
         padding: 10px 0;
@@ -55,7 +56,7 @@
         display: flex;
         flex-direction: column;
         color: white;
-        transform: translateY(-50px);
+        transform: translateY(-30px);
 
         &>h4 {
             margin-bottom: 30px;
@@ -135,187 +136,6 @@
 
             &-item>a {
                 font-size: 14px;
-            }
-        }
-    }
-}
-
-@media (max-width: 850px) {
-    .header {
-        &__wrapper {
-
-            &>h2 {
-                font-size: 16px;
-            }
-
-            &>h1 {
-                font-size: 34px;
-            }
-        }
-
-        &__list {
-            display: none;
-        }
-
-        #burgerBtn {
-            display: block;
-            background-color: transparent;
-            color: white;
-            font-size: 30px;
-        }
-
-        &__menu {
-            align-items: center;
-            justify-content: center;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            top: 0;
-            display: none;
-            background-color: $blue;
-            position: absolute;
-            z-index: 2;
-            animation: burger-on 300ms alternate forwards cubic-bezier(0.075, 0.82, 0.165, 1);
-
-            @keyframes burger-on {
-                from {
-                    opacity: 0;
-                    transform: translateX(100%);
-                }
-
-                to {
-                    opacity: 1;
-                    transform: translateX(0%);
-                }
-            }
-
-            @keyframes burger-off {
-                from {
-                    opacity: 1;
-                    transform: translateX(0%);
-                }
-
-                to {
-                    opacity: 0;
-                    transform: translateX(100%);
-                }
-            }
-
-            &-close {
-                position: absolute;
-                right: 6%;
-                top: 5%;
-                font-size: 36px;
-                background-color: transparent;
-                color: white;
-                text-shadow: 0px 0px 5px $dark-blue;
-            }
-
-            &-list {
-                gap: 20px;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-
-                &>&-item {
-                    text-shadow: 0px 0px 5px $dark-blue;
-                    font-size: 20px;
-
-                    &:active {
-                        transform: scale(0.95);
-                    }
-                }
-            }
-        }
-    }
-}
-
-@media (max-width: 750px) {
-    .header {
-        &__wrapper {
-
-            &>h4 {
-                font-size: 12px;
-                margin-bottom: 20px;
-            }
-
-            &>h2 {
-                font-size: 14px;
-                margin-bottom: 30px;
-            }
-
-            &>h1 {
-                font-size: 30px;
-                margin-bottom: 15px;
-            }
-        }
-    }
-}
-
-@media (max-width: 700px) {
-    .header {
-        &__wrapper {
-
-            &>h1 {
-                font-size: 27px;
-            }
-        }
-    }
-}
-
-@media (max-width: 530px) {
-    .header {
-        &__wrapper {
-
-            &>h4 {
-                font-size: 11px;
-            }
-
-            &>h2 {
-                font-size: 13px;
-            }
-
-            &>h1 {
-                font-size: 23px;
-                margin-bottom: 10px;
-            }
-        }
-    }
-}
-
-@media (max-width: 450px) {
-    .header {
-        &__wrapper {
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-
-            &>h4 {
-                font-size: 12px;
-            }
-
-            &>h2 {
-                font-size: 12px;
-            }
-
-            &>h1 {
-                font-size: 20px;
-                margin-bottom: 10px;
-            }
-
-            &>.btn {
-                align-self: center;
-            }
-        }
-    }
-}
-
-@media (max-width: 380px) {
-    .header {
-        &__wrapper {
-            &>h4 {
-                font-size: 11px;
             }
         }
     }
