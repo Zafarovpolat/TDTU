@@ -50,7 +50,7 @@
                 <ul class="header__list">
                     <li class="header__list-item"><a class="link" href="./index.html">Bosh sahifa</a></li>
                     <li class="header__list-item"><a class="link" href="./about.html">Bizning Litsey</a></li>
-                    <li class="header__list-item"><a class="link" href="./news.html">Yangiliklar</a></li>
+                    <li class="header__list-item"><a class="link" href="./statistics.html">Statistika</a></li>
                     <li class="header__list-item"><a class="link" href="./achievements.html">Yutuqlar</a></li>
                     <li class="header__list-item"><a class="link" href="./students.html">Ustozlar</a></li>
                     <li class="header__list-item"><button class="btn" id="modalBtn">Aloqa </button></li>
@@ -210,9 +210,46 @@
 
             </div>
         </section>
+
+        <section class="statistics">
+            <div class="container">
+                <h2 class="statistics__heading">Oxirgi 6 yillik statistikalar</h2>
+
+                <!-- Chart -->
+                <div>
+                    <canvas id="myChart"></canvas>
+                </div>
+
+                <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+                <script>
+                    const ctx = document.getElementById('myChart');
+
+                    new Chart(ctx, {
+                        type: 'bar',
+                        data: {
+                            labels: ['2018', '2019', '2020', '2021', '2022', '2023'],
+                            datasets: [{
+                                label: 'Oliy talim majmuasiga kirgan oquvchilar foyizi',
+                                data: [76, 81, 88, 86, 91, 85],
+                                borderWidth: 1
+                            }]
+                        },
+                        options: {
+                            scales: {
+                                y: {
+                                    beginAtZero: true
+                                }
+                            }
+                        }
+                    });
+                </script>
+                <!-- Chart   -->
+
+                <a href="./statistics.html" class="btn">Batafsil <i class="fa fa-chevron-right"></i></a>
+            </div>
+        </section>
     </main>
-
-
 
 </body>
 

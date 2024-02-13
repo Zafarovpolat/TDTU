@@ -1,0 +1,47 @@
+.statistics {
+    margin-bottom: 120px;
+
+    &>.container {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+
+        &>div {
+            width: 100%;
+        }
+    }
+
+    &__heading {
+        margin-bottom: 16px;
+        color: #0C101A;
+        font-size: 38px;
+        letter-spacing: 0.3px;
+    }
+}
+
+@media (max-width: 1370px) {
+    .statistics {
+        &__heading {
+            font-size: 34px;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .statistics {
+        &__heading {
+            font-size: 30px;
+        }
+    }
+}
+
+@media (max-width: 1080px) {
+    .statistics {
+        &__heading {
+            font-size: 28px;
+        }
+    }
+}

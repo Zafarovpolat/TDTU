@@ -1,8 +1,18 @@
+@media (max-width: 600px) {
+    .info {
+        margin-bottom: 80px;
+    }
+}
+
 @media (max-width: 500px) {
     .info {
 
         &__heading {
             font-size: 20px;
+        }
+
+        &__subheading {
+            text-align: center;
         }
 
         &__list {
