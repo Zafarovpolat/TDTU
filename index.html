@@ -222,34 +222,24 @@
 
                 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-                <script>
-                    const ctx = document.getElementById('myChart');
+                <!-- Chart   -->
 
-                    new Chart(ctx, {
-                        type: 'bar',
-                        data: {
-                            labels: ['2018', '2019', '2020', '2021', '2022', '2023'],
-                            datasets: [{
-                                label: 'Oliy talim majmuasiga kirgan oquvchilar foyizi',
-                                data: [76, 81, 88, 86, 91, 85],
-                                borderWidth: 1
-                            }]
-                        },
-                        options: {
-                            scales: {
-                                y: {
-                                    beginAtZero: true
-                                }
-                            }
-                        }
-                    });
-                </script>
+                <!-- Chart -->
+                <div>
+                    <canvas id="myChartTwo"></canvas>
+                </div>
+
+                <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
                 <!-- Chart   -->
 
                 <a href="./statistics.html" class="btn">Batafsil <i class="fa fa-chevron-right"></i></a>
             </div>
         </section>
     </main>
+
+    <script src="./assets/js/statistics.js"></script>
 
 </body>
 
