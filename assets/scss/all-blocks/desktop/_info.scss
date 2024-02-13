@@ -1,0 +1,240 @@
+.info {
+    background-color: #F9FBFD;
+
+    &>.container {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 80px;
+        padding: 40px 0;
+        align-items: center;
+    }
+
+    &__left {
+        max-width: 700px;
+        text-align-last: left;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        border-right: 1px solid #D2E0EA;
+        padding-right: 80px;
+
+        &>a {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+    }
+
+    &__heading {
+        margin-bottom: 16px;
+        color: #0C101A;
+        font-size: 38px;
+        letter-spacing: 0.3px;
+    }
+
+    &__subheading {
+        max-width: 500px;
+        margin-bottom: 40px;
+        letter-spacing: 0.5px;
+        color: #919FAE;
+        line-height: 32px;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+
+        &>&-item {
+            max-width: 250px;
+            max-height: 250px;
+            padding: 36px 28px;
+            background-color: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+
+            &>div {
+                font-size: 40px;
+                width: 64px;
+                height: 64px;
+                box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+                border-radius: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 24px;
+            }
+
+            &>h3 {
+                font-weight: 700;
+                color: #0C101A;
+                letter-spacing: 0.3px;
+                margin-bottom: 8px;
+            }
+
+            &>p {
+                font-size: 12px;
+                letter-spacing: 0.5px;
+                color: #919FAE;
+                line-height: 24px;
+            }
+        }
+
+        &>&-item:hover {
+            transform: scale(1.03);
+        }
+
+        &>&-item:first-child {
+            &>div>i {
+                color: #F8C301;
+            }
+        }
+
+        &>&-item:nth-child(2) {
+            &>div>i {
+                color: $blue;
+            }
+        }
+
+        &>&-item:nth-child(3) {
+            &>div>i {
+                color: #919FAE;
+            }
+        }
+
+        &>&-item:nth-child(4) {
+            &>div>i {
+                color: #FFBF00;
+            }
+        }
+    }
+}
+
+@media (max-width: 1370px) {
+    .info {
+        &__heading {
+            font-size: 34px;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .info {
+
+        &>.container {
+            gap: 60px;
+        }
+
+        &__heading {
+            font-size: 30px;
+        }
+
+        &__subheading {
+            font-size: 14px;
+        }
+
+    }
+}
+
+@media (max-width: 1170px) {
+    .info {
+        &__subheading {
+            font-size: 13px;
+        }
+    }
+}
+
+@media (max-width: 1120px) {
+    .info {
+        &__left {
+            padding-right: 70px;
+        }
+
+        &__subheading {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+@media (max-width: 1080px) {
+    .info {
+
+        &__heading {
+            font-size: 28px;
+        }
+
+
+        &__list {
+            gap: 30px;
+
+            &>&-item {
+                padding: 30px 28px;
+                width: 230px;
+                height: 230px;
+
+                &>div {
+                    font-size: 28px;
+                    width: 49px;
+                    height: 49px;
+                    margin-bottom: 20px;
+                }
+
+                &>h3 {
+                    margin-bottom: 6px;
+                }
+
+                &>p {
+                    font-size: 11px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .info {
+
+        &>.container {
+            position: relative;
+            grid-template-columns: 1fr;
+            gap: 30px;
+            padding-bottom: 120px;
+        }
+
+        &__heading {
+            font-size: 24px;
+        }
+
+        &__subheading {
+            line-height: 28px;
+            font-size: 12px;
+            max-width: 600px;
+            text-align: justify;
+        }
+
+        &__left {
+            max-width: none;
+            border-right: none;
+            padding: 0;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            &>a {
+                position: absolute;
+                bottom: 40px;
+            }
+        }
+
+
+        &__list {
+
+            &>&-item {
+                max-width: 100%;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}

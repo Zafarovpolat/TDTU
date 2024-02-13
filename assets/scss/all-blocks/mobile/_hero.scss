@@ -1,0 +1,37 @@
+@media (max-width: 560px) {
+    .hero {
+        &__video {
+            max-width: 400px;
+        }
+
+        &__text {
+            align-items: center;
+            max-width: 400px;
+        }
+
+        &__heading {
+            font-size: 20px;
+        }
+
+        &__info {
+            line-height: 20px;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        &__video {
+            max-width: 300px;
+        }
+
+        &__heading {
+            font-size: 18px;
+        }
+
+        &__info {
+            line-height: 20px;
+            font-size: 10px;
+        }
+    }
+}

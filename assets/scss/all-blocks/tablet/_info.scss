@@ -1,0 +1,45 @@
+@media (max-width: 800px) {
+    .info {
+
+        &>.container {
+            gap: 20px;
+        }
+
+        &__heading {
+            font-size: 22px;
+        }
+
+        &__subheading {
+            line-height: 24px;
+            font-size: 11px;
+            max-width: 550px;
+        }
+
+
+        &__list {
+            grid-template-columns: 1fr;
+            gap: 10px;
+
+            &>&-item {
+                display: grid;
+                grid-template-columns: auto 1fr;
+                gap: 0px 20px;
+                justify-content: center;
+                align-items: center;
+
+                &>div {
+                    margin-bottom: 0;
+                    grid-row: 1 / 3;
+                }
+
+                &>h3 {
+                    margin-bottom: 0;
+                }
+
+                &>p {
+                    grid-column: 2 / 3;
+                }
+            }
+        }
+    }
+}

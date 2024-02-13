@@ -1,5 +1,5 @@
 .hero {
-    margin-bottom: 80px;
+    margin-bottom: 140px;
 
     &>.container::after {
         content: url(../media/dotes.png);
@@ -15,6 +15,15 @@
         grid-template-columns: auto auto;
         align-items: center;
         gap: 80px;
+    }
+
+    &__video {
+        border-radius: 5px;
+        transition: all 100ms;
+    }
+
+    &__video:active {
+        opacity: 0.9;
     }
 
     &__text {
@@ -33,9 +42,9 @@
     &__info {
         letter-spacing: 0.5px;
         color: #919FAE;
-        margin-bottom: 30px;
         line-height: 32px;
         max-width: 660px;
+        margin-bottom: 30px;
     }
 
 }
@@ -112,89 +121,6 @@
             font-size: 12px;
             margin-bottom: 20px;
             line-height: 28px;
-        }
-    }
-}
-
-@media (max-width: 900px) {
-    .hero {
-
-        &__heading {
-            font-size: 22px;
-        }
-
-        &__info {
-            font-size: 11px;
-            line-height: 24px;
-        }
-    }
-}
-
-@media (max-width: 800px) {
-    .hero {
-
-        &>.container {
-            grid-template-columns: 1fr;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-        }
-
-        &>.container::after {
-            display: none;
-        }
-
-        &__video {
-            max-width: 800px;
-        }
-
-        &__text {
-            align-items: center;
-            max-width: 600px;
-        }
-
-        &__heading {
-            align-self: center;
-        }
-    }
-}
-
-@media (max-width: 560px) {
-    .hero {
-        &__video {
-            max-width: 400px;
-        }
-
-        &__text {
-            align-items: center;
-            max-width: 400px;
-        }
-
-        &__heading {
-            font-size: 20px;
-        }
-
-        &__info {
-            line-height: 20px;
-        }
-    }
-}
-
-@media (max-width: 480px) {
-    .hero {
-        &__video {
-            max-width: 300px;
-        }
-
-        &__heading {
-            font-size: 18px;
-        }
-
-        &__info {
-            line-height: 20px;
-            font-size: 10px;
         }
     }
 }

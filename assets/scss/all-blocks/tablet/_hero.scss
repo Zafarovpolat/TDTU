@@ -1,0 +1,44 @@
+@media (max-width: 900px) {
+    .hero {
+
+        &__heading {
+            font-size: 22px;
+        }
+
+        &__info {
+            font-size: 11px;
+            line-height: 24px;
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .hero {
+
+        &>.container {
+            grid-template-columns: 1fr;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        &>.container::after {
+            display: none;
+        }
+
+        &__video {
+            max-width: 800px;
+        }
+
+        &__text {
+            align-items: center;
+            max-width: 600px;
+        }
+
+        &__heading {
+            align-self: center;
+        }
+    }
+}
