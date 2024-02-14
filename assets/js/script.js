@@ -1,3 +1,5 @@
+const body = document.querySelector("body")
+console.log(body);
 let modalBtn = document.querySelectorAll("#modalBtn")
 let modalWindow = document.querySelector(".modalcover")
 let modalClose = document.getElementById("modalClose")
@@ -9,6 +11,7 @@ modalBtn.forEach((el) => {
         modalWindow.style.display = "flex"
         modalBcg.style.animationName = "modal-on"
         modalWrapper.style.animationName = "modal-on"
+        body.style.overflow = "hidden"
     })
 })
 
@@ -18,6 +21,7 @@ modalClose.addEventListener('click', () => {
     setTimeout(() => {
         modalWindow.style.display = "none"
     }, 300)
+    body.style.overflow = "visible"
 })
 
 modalBcg.addEventListener('click', () => {
@@ -26,6 +30,7 @@ modalBcg.addEventListener('click', () => {
     setTimeout(() => {
         modalWindow.style.display = "none"
     }, 300)
+    body.style.overflow = "visible"
 })
 
 let burgerOpen = document.getElementById("burgerBtn")
@@ -36,6 +41,7 @@ burgerOpen.addEventListener('click', () => {
     burgerMenu.style.display = "flex"
     burgerMenu.style.animationName = "modal-on"
     burgerList.style.animationName = "burger-on"
+    body.style.overflow = "hidden"
 })
 
 burgerMenu.addEventListener('click', () => {
@@ -44,4 +50,5 @@ burgerMenu.addEventListener('click', () => {
     setTimeout(() => {
         burgerMenu.style.display = "none"
     }, 300)
+    body.style.overflow = "visible"
 })

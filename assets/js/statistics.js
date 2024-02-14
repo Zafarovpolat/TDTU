@@ -1,7 +1,7 @@
 const ctx = document.getElementById('myChart');
 const ctxNew = document.getElementById('myChartTwo');
 
-new Chart(ctx, {
+new Chart(ctxNew, {
     type: 'bar',
     data: {
         labels: ['2018', '2019', '2020', '2021', '2022', '2023'],
@@ -22,22 +22,31 @@ new Chart(ctx, {
     }
 });
 
-new Chart(ctxNew, {
-    type: 'bar',
+new Chart(ctx, {
+    type: 'line',
     data: {
         labels: ['2018', '2019', '2020', '2021', '2022', '2023'],
         datasets: [{
             label: 'Oliy talim majmuasiga kirgan oquvchilar soni',
             data: [390, 371, 460, 413, 461, 359],
-            borderWidth: 1,
-            backgroundColor: '#0193dc8e',
-            borderColor: '#00608F',
+            fill: false,
+            borderColor: 'rgb(75, 192, 192)',
         }]
     },
     options: {
+        animations: {
+            tension: {
+                duration: 5000,
+                easing: 'linear',
+                from: 1,
+                to: 0,
+                loop: true
+            }
+        },
         scales: {
             y: {
-                beginAtZero: true
+                min: 350,
+                max: 500
             }
         }
     }

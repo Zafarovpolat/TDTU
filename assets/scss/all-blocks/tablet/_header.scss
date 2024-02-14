@@ -33,7 +33,7 @@
             display: none;
             background-color: rgba(0, 0, 0, 0.6);
             backdrop-filter: blur(3px);
-            position: absolute;
+            position: fixed;
             z-index: 2;
             animation: modal-on 300ms alternate forwards cubic-bezier(0.075, 0.82, 0.165, 1);
 
