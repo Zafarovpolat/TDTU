@@ -1,5 +1,4 @@
 const body = document.querySelector("body")
-console.log(body);
 let modalBtn = document.querySelectorAll("#modalBtn")
 let modalWindow = document.querySelector(".modalcover")
 let modalClose = document.getElementById("modalClose")
@@ -52,3 +51,7 @@ burgerMenu.addEventListener('click', () => {
     }, 300)
     body.style.overflow = "visible"
 })
+
+let teachersSliderLeft = document.querySelector("#teachersSliderLeft")
+let teachersSliderRight = document.querySelector("#teachersSliderRight")
+let teachersSliderList = document.querySelectorAll(".teachers__list-item")
