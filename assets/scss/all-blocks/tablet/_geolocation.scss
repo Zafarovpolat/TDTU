@@ -1,0 +1,12 @@
+@media (max-width: 1000px) {
+    .geolocation {
+        &>.container {
+            width: 90%;
+            gap: 20px;
+        }
+
+        &__heading {
+            font-size: 24px;
+        }
+    }
+}

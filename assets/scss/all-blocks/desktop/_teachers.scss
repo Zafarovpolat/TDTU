@@ -1,5 +1,5 @@
 .teachers {
-    margin-bottom: 60px;
+    margin-bottom: 100px;
     background-color: #F9FBFD;
     padding: 40px 0;
 
@@ -9,6 +9,8 @@
         text-align: center;
         justify-content: center;
         align-items: center;
+        padding: 10px;
+        overflow: hidden;
     }
 
     &__heading {
@@ -92,6 +94,7 @@
 
 @media (max-width: 1200px) {
     .teachers {
+
         &__heading {
             font-size: 30px;
         }
@@ -112,6 +115,7 @@
 
 @media (max-width: 1080px) {
     .teachers {
+        margin-bottom: 80px;
 
         &__heading {
             font-size: 28px;

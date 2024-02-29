@@ -1,0 +1,9 @@
+@media (max-width: 670px) {
+    .geolocation {
+        &>.container {
+            &>iframe {
+                height: 400px;
+            }
+        }
+    }
+}
