@@ -29,8 +29,9 @@
     <!-- <link rel="stylesheet" href="./assets/css/main.css.map"> -->
     <!-- CSS -->
 
-    <!-- Custom player -->
-    <!-- Custom player -->
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Swiper -->
 
     <!-- JS -->
     <script defer src="./assets/js/script.js"></script>
@@ -249,58 +250,79 @@
                 <p class="teachers__info">Litseyimiz o‘qituvchilari ilhomlantiruvchi va masuliyatli bo‘lib, har bir
                     o‘quvchining ta’lim-tarbiyasiga o‘z qalbini bag‘ishlaydi, o‘sish va rivojlanishni rag‘batlantiradi.
                 </p>
-                <ul class="teachers__list">
-                    <button id="teachersSliderLeft"><i class="fa-solid fa-chevron-left"></i></button>
-                    <li class="teachers__list-item">
-                        <div> <img src="./assets/media/Nasim aka.jpg" alt=""></div>
-                        <div>
-                            <h4>Qodirov Nasim Zoirovich</h4>
-                            <p>Fizika ustozi va fizika kafedrasi mudiri</p>
-                        </div>
-                    </li>
 
-                    <li class="teachers__list-item">
-                        <div> <img src="" alt=""></div>
-                        <div>
-                            <h4>Isxaqova Dilafruz</h4>
-                            <p>Algebra va geometriya ustozi</p>
-                        </div>
-                    </li>
+                <div class="swiper mySwiper">
 
-                    <li class="teachers__list-item">
-                        <div> <img src="" alt=""></div>
-                        <div>
-                            <h4>Davlatov Furqat</h4>
-                            <p>Rus tili va rus adabiyot ustozi</p>
+                    <div class="swiper-wrapper">
+                        <div class="teachers__list-item swiper-slide">
+                            <div> <img src="./assets/media/Nasim aka.jpg" alt=""></div>
+                            <div>
+                                <h4>Qodirov Nasim Zoirovich</h4>
+                                <p>Fizika ustozi va fizika kafedrasi mudiri</p>
+                            </div>
                         </div>
-                    </li>
 
-                    <li class="teachers__list-item">
-                        <div> <img src="" alt=""></div>
-                        <div>
-                            <h4>Yangiboyeva Urozgul</h4>
-                            <p>Ozbek tili va ozbek adabiyot ustozi</p>
+                        <div class="teachers__list-item swiper-slide">
+                            <div> <img src="" alt=""></div>
+                            <div>
+                                <h4>Isxaqova Dilafruz</h4>
+                                <p>Algebra va geometriya ustozi</p>
+                            </div>
                         </div>
-                    </li>
 
-                    <li class="teachers__list-item">
-                        <div> <img src="./assets/media/Nasim aka.jpg" alt=""></div>
-                        <div>
-                            <h4>Qodirov Nasim Zoirovich</h4>
-                            <p>Fizika ustozi va fizika kafedrasi mudiri</p>
+                        <div class="teachers__list-item swiper-slide">
+                            <div> <img src="" alt=""></div>
+                            <div>
+                                <h4>Davlatov Furqat</h4>
+                                <p>Rus tili va rus adabiyot ustozi</p>
+                            </div>
                         </div>
-                    </li>
 
-                    <li class="teachers__list-item">
-                        <div> <img src="" alt=""></div>
-                        <div>
-                            <h4>Isxaqova Dilafruz</h4>
-                            <p>Algebra va geometriya ustozi</p>
+                        <div class="teachers__list-item swiper-slide">
+                            <div> <img src="" alt=""></div>
+                            <div>
+                                <h4>Yangiboyeva Urozgul</h4>
+                                <p>Ozbek tili va ozbek adabiyot ustozi</p>
+                            </div>
                         </div>
-                    </li>
 
-                    <button id="teachersSliderRight"><i class="fa-solid fa-chevron-right"></i></button>
-                </ul>
+                        <div class="teachers__list-item swiper-slide">
+                            <div> <img src="" alt=""></div>
+                            <div>
+                                <h4>Davlatov Furqat</h4>
+                                <p>Rus tili va rus adabiyot ustozi</p>
+                            </div>
+                        </div>
+
+                        <div class="teachers__list-item swiper-slide">
+                            <div> <img src="" alt=""></div>
+                            <div>
+                                <h4>Yangiboyeva Urozgul</h4>
+                                <p>Ozbek tili va ozbek adabiyot ustozi</p>
+                            </div>
+                        </div>
+
+                        <div class="teachers__list-item swiper-slide">
+                            <div> <img src="" alt=""></div>
+                            <div>
+                                <h4>Davlatov Furqat</h4>
+                                <p>Rus tili va rus adabiyot ustozi</p>
+                            </div>
+                        </div>
+
+                        <div class="teachers__list-item swiper-slide">
+                            <div> <img src="" alt=""></div>
+                            <div>
+                                <h4>Yangiboyeva Urozgul</h4>
+                                <p>Ozbek tili va ozbek adabiyot ustozi</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
 
                 <a href="./teachers.html" class="btn">Ustozlar
                     <i class="fa-solid fa-users"></i>
@@ -308,9 +330,21 @@
             </div>
         </section>
 
+        <section>
+            <div class="container">
+
+            </div>
+        </section>
+
     </main>
 
     <script src="./assets/js/statistics.js"></script>
+
+
+    <!-- Custom slider -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./assets/js/slider.js"></script>
+    <!-- Custom slider -->
 
 </body>
 

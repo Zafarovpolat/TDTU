@@ -11,7 +11,6 @@
         }
 
         &__list {
-            width: 90%;
 
             &-item {
                 &>div:nth-child(2) {
@@ -31,20 +30,26 @@
 
 @media (max-width: 670px) {
     .teachers {
+
+        .swiper {
+            height: 100px;
+            margin-bottom: 50px;
+        }
+
+        .swiper-pagination {
+            transform: translateY(40px);
+        }
+
         &__list {
             grid-template-columns: 1fr;
 
-            &>button {
-                display: none;
-            }
 
             &-item {
-                display: grid;
+                display: grid !important;
                 grid-template-columns: auto 1fr;
                 grid-row: auto auto;
                 gap: 30px;
                 border-radius: 50px;
-                display: none;
 
                 &>div:nth-child(1) {
                     grid-row: 1 / 3;
