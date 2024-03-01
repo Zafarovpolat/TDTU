@@ -47,3 +47,12 @@ button:active {
     width: 90%;
     margin: 0 auto;
 }
+
+.logo {
+    display: flex;
+    align-items: center;
+
+    &>img {
+        width: 70px;
+    }
+}

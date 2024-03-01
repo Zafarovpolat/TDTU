@@ -1,0 +1,107 @@
+.footer {
+    background-color: #F9F9F9;
+
+    &__up {
+        padding: 32px 0;
+        border-bottom: 1px solid #E6E6E7;
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        gap: 50px;
+
+        &__left {
+            display: flex;
+            flex-direction: column;
+            font-size: 14px;
+
+            &>.logo {
+                margin-bottom: 16px;
+            }
+        }
+
+        &__right {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 30px;
+        }
+    }
+
+    &__info {
+        max-width: 370px;
+        margin-bottom: 24px;
+        font-weight: 500;
+        line-height: 200%;
+        letter-spacing: 0.03em;
+    }
+
+    &__contact {
+        font-weight: 700;
+        line-height: 200%;
+        letter-spacing: 0.03em;
+
+        &:hover {
+            color: $blue;
+        }
+    }
+
+    &__pages {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        &>&-item:nth-child(1) {
+            margin-bottom: 10px;
+            font-weight: 700;
+            font-size: 16px;
+            letter-spacing: 0.02em;
+        }
+
+        &-item>.link {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 129%;
+            letter-spacing: 0.01em;
+            color: #373f41;
+
+            &::before {
+                background-color: $blue;
+            }
+        }
+    }
+
+    &__medias {
+        display: grid;
+        grid-template-rows: 30px auto;
+        grid-template-columns: repeat(3, 1fr);
+
+        &-item:nth-child(1) {
+            grid-column: 1 / 4;
+            font-weight: 700;
+            font-size: 16px;
+            letter-spacing: 0.02em;
+        }
+
+        &-item>a>i {
+            font-size: 30px;
+
+            &:hover {
+                color: $blue;
+            }
+        }
+    }
+
+    &__bottom {
+        padding: 20px 0;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 200%;
+        letter-spacing: 0.03em;
+    }
+}
+
+@media (max-width: 1200px) {
+    .footer {
+        &__up {
+            grid-template-columns: 1fr 2fr;
+        }
+    }
+}

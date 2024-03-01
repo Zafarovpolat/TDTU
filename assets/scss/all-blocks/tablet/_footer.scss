@@ -1,0 +1,30 @@
+@media (max-width: 1000px) {
+    .footer {
+        &__up {
+            grid-template-columns: 1fr;
+
+            &__left {
+                align-items: center;
+            }
+
+            &__right>ul {
+                align-items: center;
+            }
+        }
+
+        &__info {
+            max-width: none;
+            font-size: 12px;
+        }
+
+        &__medias {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        &__bottom {
+            text-align: center;
+        }
+    }
+}

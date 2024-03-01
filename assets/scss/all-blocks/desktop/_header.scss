@@ -21,15 +21,6 @@
         z-index: 2;
     }
 
-    .logo {
-        display: flex;
-        align-items: center;
-
-        &>img {
-            width: 70px;
-        }
-    }
-
     &__list {
         display: flex;
         align-items: center;
