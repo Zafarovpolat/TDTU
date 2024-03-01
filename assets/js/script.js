@@ -51,3 +51,20 @@ burgerMenu.addEventListener('click', () => {
     }, 300)
     body.style.overflow = "visible"
 })
+
+let header = document.querySelector("header")
+
+function changeBcg() {
+    let i = 1
+    setInterval((() => {
+        if (i < 4) {
+            i++
+            header.style.backgroundImage = `url(./assets/media/bcg${i}.jpg)`
+        }
+        else if (i == 4) {
+            i = 0
+        }
+    }), 7000)
+}
+
+changeBcg()
