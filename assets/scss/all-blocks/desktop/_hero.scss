@@ -1,6 +1,7 @@
 .hero {
     margin-bottom: 120px;
 
+
     &>.container::after {
         content: url(../media/dotes.png);
         position: absolute;

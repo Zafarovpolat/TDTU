@@ -68,3 +68,40 @@ function changeBcg() {
 }
 
 changeBcg()
+
+let upBtn = document.querySelector(".upBtn")
+upBtn.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: "smooth",
+    });
+})
+
+const sectionsObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.style.animationName = "sec-on"
+
+            observer.unobserve(entry.target)
+        }
+    })
+}, {})
+
+document.querySelectorAll('section').forEach((sec) => {
+    sectionsObserver.observe(sec)
+})
+
+const videoObserver = new IntersectionObserver((entries) => {
+    entries.forEach(ent => {
+        const video = ent.target
+        if (!ent.isIntersecting || ent.intersectionRatio <= 0.3) {
+            video.pause()
+        }
+        else {
+            video.play()
+        }
+    }, {})
+})
+
+videoObserver.observe(document.querySelector("video"))
