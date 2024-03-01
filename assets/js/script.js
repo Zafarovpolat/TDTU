@@ -98,10 +98,17 @@ const videoObserver = new IntersectionObserver((entries) => {
         if (!ent.isIntersecting || ent.intersectionRatio <= 0.3) {
             video.pause()
         }
-        else {
-            video.play()
-        }
     }, {})
 })
 
 videoObserver.observe(document.querySelector("video"))
+
+const heroObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach((ent) => {
+        if (ent.isIntersecting) {
+            upBtn.style.bottom = "5%"
+        }
+    })
+})
+
+heroObserver.observe(document.querySelector(".hero"))
