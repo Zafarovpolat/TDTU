@@ -105,10 +105,13 @@ videoObserver.observe(document.querySelector("video"))
 
 const heroObserver = new IntersectionObserver((entries, observer) => {
     entries.forEach((ent) => {
-        if (ent.isIntersecting) {
+        if (!ent.isIntersecting) {
             upBtn.style.bottom = "5%"
+        }
+        else {
+            upBtn.style.bottom = "-100%"
         }
     })
 })
 
-heroObserver.observe(document.querySelector(".hero"))
+heroObserver.observe(document.querySelector(".header"))

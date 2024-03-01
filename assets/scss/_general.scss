@@ -83,6 +83,20 @@ button:active {
     }
 }
 
+@media (max-width: 1000px) {
+    .upBtn {
+        right: 5%;
+    }
+}
+
+@media (max-width: 500px) {
+    .upBtn {
+        &>button {
+            font-size: 22px;
+        }
+    }
+}
+
 section {
     animation: sec 20s alternate forwards cubic-bezier(0.075, 0.82, 0.065, 1);
 }
