@@ -1,0 +1,63 @@
+@media (max-width: 1000px) {
+    .about {
+        margin-bottom: 50px;
+
+        &__heading {
+            font-size: 26px;
+        }
+
+        &__cards {
+            gap: 20px;
+
+            &-item {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                &>img {
+                    max-height: 300px;
+                    width: 90%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .about {
+
+        &__heading {
+            font-size: 24px;
+        }
+
+        &__cards {
+            gap: 20px;
+
+            &-item {
+
+                &>p {
+                    line-height: 28px;
+                }
+
+                &>h4 {
+                    font-size: 20px;
+                }
+            }
+        }
+
+        &__info {
+            line-height: 28px;
+            font-size: 13px;
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .about {
+
+        &__heading {
+            font-size: 20px;
+        }
+    }
+}

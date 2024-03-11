@@ -1,0 +1,15 @@
+.header-about {
+
+    & {
+        background-image: url(../media/lyceum_close.jpg);
+    }
+
+    margin-bottom: 120px;
+
+}
+
+@media (max-width: 600px) {
+    .header-about {
+        background-image: url(../media/lyceum_far.jpg);
+    }
+}

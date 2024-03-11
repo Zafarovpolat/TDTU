@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="light">
+    <meta name="author" content="Zafarov Polat">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Icons -->
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Fonts -->
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/media/icon//apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/media/icon//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/media/icon//favicon-16x16.png">
+    <link rel="manifest" href="./assets/media/icon//site.webmanifest">
+    <!-- Favicon -->
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <!-- <link rel="stylesheet" href="./assets/css/main.css.map"> -->
+    <!-- CSS -->
+
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Swiper -->
+
+    <!-- JS -->
+    <script defer src="./assets/js/script.js"></script>
+    <!-- JS -->
+
+    <title>TDTU Akademik Litsey</title>
+</head>
+
+<body>
+
+    <div class="loader">
+        <div class="gooey">
+            <span class="dot"></span>
+            <div class="dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <header class="header header-about">
+        <div class="container">
+            <nav>
+                <a href="./index.html" class="logo">
+                    <img src="./assets/media/Logo.svg" alt="#">
+                </a>
+
+                <ul class="header__list">
+                    <li class="header__list-item"><a class="link" href="./index.html">Bosh sahifa</a></li>
+                    <li class="header__list-item"><a class="link" href="./about.html">Bizning Litsey</a></li>
+                    <li class="header__list-item"><a class="link" href="./statistics.html">Statistika</a></li>
+                    <li class="header__list-item"><a class="link" href="./achievements.html">Yutuqlar</a></li>
+                    <li class="header__list-item"><a class="link" href="./teachers.html">Ustozlar</a></li>
+                    <li class="header__list-item"><button class="btn" id="modalBtn">Aloqa </button></li>
+                </ul>
+
+                <button id="burgerBtn"><i class="fa-solid fa-bars"></i></button>
+            </nav>
+
+            <div class="header__wrapper">
+                <h4>
+                    TDTU AL
+                </h4>
+                <h1>
+                    <span>ISLOM KARIMOV NOMIDAGI</span> TDTU <span> Akademik Litsey</span>
+                </h1>
+                <h2>Albatta olimning obidga nisbatan fazilati to‘lin oyning yulduzlarga ko‘ra fazliga o‘xshaydi</h2>
+            </div>
+        </div>
+
+        <!-- Burger menu -->
+
+        <div class="header__menu">
+            <ul class="header__menu-list">
+                <li class="header__menu-list-item"><a class="link" href="./index.html">Bosh sahifa</a><i
+                        class="fa-solid fa-house"></i></li>
+                <li class="header__menu-list-item"><a class="link" href="./about.html">Bizning Litsey</a><i
+                        class="fa-solid fa-place-of-worship"></i></li>
+                <li class="header__menu-list-item"><a class="link" href="./news.html">Yangiliklar</a><i
+                        class="fa-solid fa-newspaper"></i></li>
+                <li class="header__menu-list-item"><a class="link" href="./achievements.html">Yutuqlar</a><i
+                        class="fa-solid fa-trophy"></i></li>
+                <li class="header__menu-list-item"><a class="link" href="./teachers.html">Ustozlar</a><i
+                        class="fa-solid fa-users"></i></li>
+                <li class="header__menu-list-item"><button class="btn" id="modalBtn">Aloqa</button></li>
+            </ul>
+
+        </div>
+
+        <!-- Burger menu -->
+
+
+        <div class="modalcover">
+
+            <div class="modalbcg"></div>
+
+            <div class="modal">
+                <button id="modalClose"><i class="fa-solid fa-x"></i></button>
+
+                <h3 class="modal__heading">
+                    Malumotingizni qoldiring
+                </h3>
+
+                <form class="modal__form" action="#" method="post">
+
+
+                    <div class="modal__form__up">
+                        <div>
+                            <label for="name">Ism</label>
+                            <input autocomplete="off" type="text" id="name">
+                        </div>
+
+                        <div>
+                            <label for="surname">Familiya</label>
+                            <input autocomplete="off" type="text" id="surname">
+                        </div>
+
+                        <div>
+                            <label for="number">Telefon raqamingiz</label>
+                            <input autocomplete="off" type="tel" id="number">
+                        </div>
+
+                        <div>
+                            <label for="email">Email</label>
+                            <input autocomplete="off" type="email" id="email">
+                        </div>
+
+                        <div>
+                            <textarea name="info" id="info" placeholder="Malumot..."></textarea>
+                        </div>
+                    </div>
+
+                    <div class="modal__form__bottom">
+                        <ul class="medias">
+                            <li class="medias__item">
+                                <a href="https://t.me/ALqabul2023">
+                                    <i class="fa-brands fa-telegram"></i>
+                                </a>
+                            </li>
+                            <li class="medias__item">
+                                <a href="#">
+                                    <i class="fa-brands fa-youtube"></i>
+                                </a>
+                            </li>
+                            <li class="medias__item">
+                                <a href="#">
+                                    <i class="fa-brands fa-facebook"></i>
+                                </a>
+                            </li>
+                        </ul>
+
+                        <button class="btn" type="submit">Jo'natish</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+        <div class="cover"></div>
+    </header>
+
+    <div class="upBtn">
+        <button><i class="fa-solid fa-chevron-up"></i></button>
+    </div>
+
+    <main>
+        <section class="about">
+            <div class="container">
+                <h2 class="about__heading"><span>TDTU AL</span> - Toshkent Davlat Texnika Universiteti Akademik Litseyi
+                </h2>
+                <p class="about__info">Akademik litsey kompyuterlashtirish va axborot texnologiyalari sohasida
+                    ishlash
+                    uchun kadrlar tayyorlashdan iborat birinchi litseydir.
+                    Akademik litseyda matematika, fizika, informatika va ingliz tilini o‘rganishga
+                    tabaqalashtirilgan
+                    yondashuv joriy etildi. Talabalar tadqiqot ishlariga jalb qilingan.
+                    Kompyuter texnologiyalari akademik litseyi davlat va jahon ta’lim standartlari talablariga
+                    javob
+                    beradigan nufuzli ta’lim muassasalaridan biri sanaladi.
+                </p>
+                <ul class="about__cards">
+                    <li class="about__cards-item">
+                        <img src="./assets/media/lyceum_close.jpg" alt="">
+                        <h4>Listey bosh binosi</h4>
+                        <p> Litseyda 4 nafar fan doktori, 9 nafar fan nomzodi va bir qancha yuqori
+                            malakali
+                            o‘qituvchilar
+                            faoliyat ko‘rsatmoqda. Ulardan 2 nafari faxriy yoshlar ustozi, 4 nafari davlat mukofotlari
+                            bilan
+                            taqdirlangan, 12 nafari o‘rta maxsus, kasb-hunar ta’limi a’lochisidir.
+                            Tajribali o'qituvchilar va har bir talabaga individual yondashuv sifatli ta'lim va axborot
+                            texnologiyalari sohasida muvaffaqiyatli martaba tayyorlashni ta'minlaydi.</p>
+                    </li>
+                    <li class="about__cards-item">
+                        <img src="./assets/media/lyceum_far.jpg" alt="">
+                        <h4>Litsey yolakchalari</h4>
+                        <p> Litseyda ta'lim kompyuter texnologiyalari sohasida ixtisoslashgan tajribali va malakali
+                            o'qituvchilar tomonidan olib boriladi. O'quv dasturlari bilimlarni amaliy qo'llashga
+                            qaratilgan bo'lib, talabalarga real hayotdagi loyihalarda tajriba orttirish imkonini beradi.
+                            Universal o'qitish usuli va har bir talabaga shaxsiy tahliyl yoli bizning tahsil
+                            oluvchilarimizning potentsialini tushuna keltirish imkoniyatini beradi. Bu yerda har kun —
+                            faqat bilimdan bo'sh bo'lmagan o'quvchilar uchundir.
+                        </p>
+                    </li>
+                    <li class="about__cards-item">
+                        <img src="./assets/media/lyceum_inside.jpg" alt="">
+                        <h4>Litsey xonalari</h4>
+                        <p>TDTU akademik litseyi nafaqat ta’lim beradi,
+                            balki o‘z o‘quvchilarini yuksak marralarni zabt etishga, o‘z salohiyatini ro‘yobga
+                            chiqarishga
+                            undaydi. Bizning noyob o'qitish uslublarimiz, tajribali o'qituvchilarimiz va
+                            qo'llab-quvvatlovchi muhit bizning muassasamizni rivojlanish va bilim olish uchun ideal
+                            joyga
+                            aylantiradi. Excellence litseyida o‘qish kelajakka qo‘yilgan sarmoya va farzandingiz
+                            muvaffaqiyatining kalitidir.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__up">
+                <div class="footer__up__left">
+                    <a href="" class="logo">
+                        <img src="./assets/media/Logo.svg" alt="#">
+                    </a>
+                    <p class="footer__info">O'zbekiston, 100095, Toshkent shahri, Olmazor tumani, Universitet ko'chasi,
+                        2 uy
+                    </p>
+                    <a href="mailto:alkt.uz@gmail.com" class="footer__contact">alkt.uz@gmail.com</a>
+                    <a href="tel:+99871 246-60-34" class="footer__contact">+998(71) 246-60-34</a>
+                </div>
+
+                <div class="footer__up__right">
+                    <ul class="footer__pages">
+                        <li class="footer__pages-item">
+                            <h4>Sahifalar</h4>
+                        </li>
+                        <li class="footer__pages-item"><a class="link" href="./about.html">Litsey</a></li>
+                        <li class="footer__pages-item"><a class="link" href="./statistics.html">Statistika</a></li>
+                        <li class="footer__pages-item"><a class="link" href="./achievements.html">Yutuqlar</a></li>
+                        <li class="footer__pages-item"><a class="link" href="./teachers.html">Ustozlar</a></li>
+                    </ul>
+                    <ul class="footer__pages">
+                        <li class="footer__pages-item">
+                            <h4>Malumot</h4>
+                        </li>
+                        <li class="footer__pages-item"><a class="link" href="./about.html">Yonalishlar</a></li>
+                        <li class="footer__pages-item"><a class="link" href="./statistics.html">Qoydalar</a></li>
+                        <li class="footer__pages-item"><a class="link" href="./achievements.html">Galereya</a>
+                        </li>
+                    </ul>
+                    <ul class="footer__medias">
+                        <li class="footer__medias-item">Ijtimoiy tarmoqlar</li>
+                        <li class="footer__medias-item"><a href="https://t.me/ALqabul2023"><i
+                                    class="fa-brands fa-telegram"></i></a></li>
+                        <li class="footer__medias-item"><a href="https://www.instagram.com/tdtu_litsey/"><i
+                                    class="fa-brands fa-instagram"></i></a></li>
+                        <li class="footer__medias-item"><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p class="rights">© Islom Karimov nomidagi Toshkent Davlat Texnika Universiteti Akademik Litsey 2024</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./assets/js/statistics.js"></script>
+
+
+    <!-- Custom slider -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./assets/js/slider.js"></script>
+    <!-- Custom slider -->
+
+</body>
+
+</html>

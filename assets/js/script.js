@@ -1,11 +1,11 @@
-const body = document.querySelector("body")
-let modalBtn = document.querySelectorAll("#modalBtn")
-let modalWindow = document.querySelector(".modalcover")
-let modalClose = document.getElementById("modalClose")
-let modalBcg = document.querySelector(".modalbcg")
-let modalWrapper = document.querySelector(".modal")
+const body = document?.querySelector("body")
+let modalBtn = document?.querySelectorAll("#modalBtn")
+let modalWindow = document?.querySelector(".modalcover")
+let modalClose = document?.getElementById("modalClose")
+let modalBcg = document?.querySelector(".modalbcg")
+let modalWrapper = document?.querySelector(".modal")
 
-modalBtn.forEach((el) => {
+modalBtn?.forEach((el) => {
     el.addEventListener('click', () => {
         modalWindow.style.display = "flex"
         modalBcg.style.animationName = "modal-on"
@@ -14,7 +14,7 @@ modalBtn.forEach((el) => {
     })
 })
 
-modalClose.addEventListener('click', () => {
+modalClose?.addEventListener('click', () => {
     modalBcg.style.animationName = "modal-off"
     modalWrapper.style.animationName = "modal-off"
     setTimeout(() => {
@@ -23,7 +23,7 @@ modalClose.addEventListener('click', () => {
     body.style.overflow = "visible"
 })
 
-modalBcg.addEventListener('click', () => {
+modalBcg?.addEventListener('click', () => {
     modalBcg.style.animationName = "modal-off"
     modalWrapper.style.animationName = "modal-off"
     setTimeout(() => {
@@ -32,18 +32,18 @@ modalBcg.addEventListener('click', () => {
     body.style.overflow = "visible"
 })
 
-let burgerOpen = document.getElementById("burgerBtn")
-let burgerMenu = document.querySelector(".header__menu")
-let burgerList = document.querySelector(".header__menu-list")
+let burgerOpen = document?.getElementById("burgerBtn")
+let burgerMenu = document?.querySelector(".header__menu")
+let burgerList = document?.querySelector(".header__menu-list")
 
-burgerOpen.addEventListener('click', () => {
+burgerOpen?.addEventListener('click', () => {
     burgerMenu.style.display = "flex"
     burgerMenu.style.animationName = "modal-on"
     burgerList.style.animationName = "burger-on"
     body.style.overflow = "hidden"
 })
 
-burgerMenu.addEventListener('click', () => {
+burgerMenu?.addEventListener('click', () => {
     burgerMenu.style.animationName = "modal-off"
     burgerList.style.animationName = "burger-off"
     setTimeout(() => {
@@ -52,7 +52,7 @@ burgerMenu.addEventListener('click', () => {
     body.style.overflow = "visible"
 })
 
-let header = document.querySelector("header")
+let header = document?.querySelector("header")
 
 function changeBcg() {
     let i = 1
@@ -67,9 +67,14 @@ function changeBcg() {
     }), 7000)
 }
 
-changeBcg()
+let mainPage = document?.querySelector(".index")
 
-let upBtn = document.querySelector(".upBtn")
+if (mainPage) {
+    changeBcg()
+}
+
+
+let upBtn = document?.querySelector(".upBtn")
 upBtn.addEventListener('click', () => {
     window.scrollTo({
         top: 0,
@@ -82,13 +87,12 @@ const sectionsObserver = new IntersectionObserver((entries, observer) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
             entry.target.style.animationName = "sec-on"
-
             observer.unobserve(entry.target)
         }
     })
 }, {})
 
-document.querySelectorAll('section').forEach((sec) => {
+document?.querySelectorAll('section').forEach((sec) => {
     sectionsObserver.observe(sec)
 })
 
@@ -101,7 +105,10 @@ const videoObserver = new IntersectionObserver((entries) => {
     }, {})
 })
 
-videoObserver.observe(document.querySelector("video"))
+let video = document?.querySelector("video")
+if (video) {
+    videoObserver.observe(video)
+}
 
 const heroObserver = new IntersectionObserver((entries, observer) => {
     entries.forEach((ent) => {
@@ -115,3 +122,12 @@ const heroObserver = new IntersectionObserver((entries, observer) => {
 })
 
 heroObserver.observe(document.querySelector(".header"))
+
+let loaderBcg = document?.querySelector(".loader")
+
+// setTimeout(() => {
+//     body.style.overflowY = "scroll"
+//     loaderBcg.style.zIndex = 0
+// }, 2500);
+
+body.style.overflowY = "scroll"
