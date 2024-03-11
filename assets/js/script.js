@@ -125,9 +125,7 @@ heroObserver.observe(document.querySelector(".header"))
 
 let loaderBcg = document?.querySelector(".loader")
 
-// setTimeout(() => {
-//     body.style.overflowY = "scroll"
-//     loaderBcg.style.zIndex = 0
-// }, 2500);
-
-body.style.overflowY = "scroll"
+setTimeout(() => {
+    body.style.overflowY = "scroll"
+    loaderBcg.style.zIndex = 0
+}, 2500);
