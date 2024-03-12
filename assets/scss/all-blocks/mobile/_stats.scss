@@ -1,0 +1,39 @@
+@media (max-width: 600px) {
+    .stats {
+
+        &__info {
+            line-height: 26px;
+            margin-bottom: 20px;
+        }
+
+        &__cards {
+            &-item {
+                &>p {
+                    line-height: 26;
+                }
+            }
+        }
+
+    }
+}
+
+@media (max-width: 500px) {
+    .stats {
+
+        &__info {
+            font-size: 12px;
+            line-height: 24px;
+            margin-bottom: 20px;
+        }
+
+        &__cards {
+            &-item {
+                &>p {
+                    font-size: 12px;
+                    line-height: 24px;
+                }
+            }
+        }
+
+    }
+}
