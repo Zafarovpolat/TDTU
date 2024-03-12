@@ -62,9 +62,10 @@ function changeBcg() {
             header.style.backgroundImage = `url(./assets/media/bcg${i}.jpg)`
         }
         else if (i == 4) {
-            i = 0
+            i = 1
+            header.style.backgroundImage = `url(./assets/media/bcg${i}.jpg)`
         }
-    }), 7000)
+    }), 5000)
 }
 
 let mainPage = document?.querySelector(".index")
@@ -129,3 +130,4 @@ setTimeout(() => {
     body.style.overflowY = "scroll"
     loaderBcg.style.zIndex = 0
 }, 2500);
+body.style.overflowY = "scroll"
