@@ -1,0 +1,9 @@
+.header-achievements {
+    background-image: url(../media/achievement.jpg);
+}
+
+@media (max-width: 1000px) {
+    .header-achievements {
+        background-image: url(../media/achievement_mobile.jpeg);
+    }
+}

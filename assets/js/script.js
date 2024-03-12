@@ -128,6 +128,5 @@ let loaderBcg = document?.querySelector(".loader")
 
 setTimeout(() => {
     body.style.overflowY = "scroll"
-    loaderBcg.style.zIndex = 0
+    loaderBcg.style.zIndex = -1
 }, 2500);
-body.style.overflowY = "scroll"

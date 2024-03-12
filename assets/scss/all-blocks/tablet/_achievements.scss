@@ -1,0 +1,79 @@
+@media (max-width: 1000px) {
+    .achievements {
+
+        &__heading {
+            font-size: 26px;
+        }
+
+        &__list {
+            &-item {
+                grid-template-columns: 1fr;
+
+                &>div:nth-child(2) {
+                    padding: 0;
+                    text-align: center;
+                    order: 1;
+
+                    &>h4 {
+                        text-align: center;
+                    }
+
+                    &>p {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .achievements {
+        &__heading {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        &__info {
+            line-height: 28px;
+            font-size: 13px;
+        }
+
+        &__list {
+            &-item {
+                &>div:nth-child(2) {
+                    &>h4 {
+                        font-size: 20px;
+                        margin-bottom: 15px;
+                    }
+
+                    &>p {
+                        font-size: 13px;
+                        line-height: 28px;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+@media (max-width: 700px) {
+    .achievements {
+        &__heading {
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+
+        &__list {
+            &-item {
+                &>div:nth-child(2) {
+                    &>h4 {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+
+    }
+}

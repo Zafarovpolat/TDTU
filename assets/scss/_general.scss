@@ -113,3 +113,12 @@ section {
         opacity: 1;
     }
 }
+
+@media (max-width: 600px) {
+
+    a:active,
+    button:active {
+        transform: none;
+    }
+
+}
