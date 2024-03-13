@@ -1,0 +1,16 @@
+@media (max-width: 600px) {
+    .teachers-page {
+        &__info {
+            line-height: 26px;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .teachers-page {
+        &__info {
+            font-size: 12px;
+            line-height: 24px;
+        }
+    }
+}

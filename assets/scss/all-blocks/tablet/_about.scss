@@ -31,6 +31,11 @@
             font-size: 24px;
         }
 
+        &__info {
+            line-height: 28px;
+            font-size: 13px;
+        }
+
         &__cards {
             gap: 20px;
 
@@ -44,11 +49,6 @@
                     font-size: 20px;
                 }
             }
-        }
-
-        &__info {
-            line-height: 28px;
-            font-size: 13px;
         }
     }
 }
